@@ -16,5 +16,10 @@ public class NoteShmoovement : MonoBehaviour
     void FixedUpdate()
     {
         transform.Translate(Speed * Time.deltaTime, 0, 0);
+        if(transform.position.x <= -5)
+        {
+            Destroy(Note);
+        }
     }
+     
 }
