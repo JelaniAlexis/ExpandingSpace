@@ -7,14 +7,14 @@ public class Inputs : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("w"))
         {
-            print("e key was pressed");
+            print("w key was pressed");
         }
 
-        if (Input.GetKeyDown("f"))
+        if (Input.GetKeyDown("d"))
         {
-            print("f key was pressed");
+            print("d key was pressed");
         }
     }
 }
