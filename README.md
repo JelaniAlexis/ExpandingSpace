@@ -2,7 +2,7 @@
 
 ## Description
 
-A game currently under development by. Expected release date: July 2nd 2021
+A game currently under development. Expected release date: July 2nd 2021
 
 ## Credits
 
