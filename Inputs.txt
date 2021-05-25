@@ -1,0 +1,20 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class Inputs : MonoBehaviour
+{
+    void Update()
+    {
+        if (Input.GetKeyDown("w"))
+        {
+            print("w key was pressed");
+        }
+
+        if (Input.GetKeyDown("d"))
+        {
+            print("d key was pressed");
+        }
+    }
+}
