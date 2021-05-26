@@ -5,14 +5,22 @@ using UnityEngine;
 
 public class Inputs : MonoBehaviour
 {
-    void FixedUpdate()
+
+    public GameObject Note;
+    void Start()
     {
-        if (Input.GetKey(KeyCode.W))
+        Note = GameObject.Find("UI_Eerste schetsen_buttons_Aries_01");
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown("w"))
         {
             Debug.Log("w key was pressed");
+            Destroy(Note);
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKeyDown("d"))
         {
             Debug.Log("d key was pressed");
         }

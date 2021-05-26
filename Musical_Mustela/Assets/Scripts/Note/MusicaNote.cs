@@ -5,7 +5,7 @@ using UnityEngine;
 public class MusicaNote : MonoBehaviour
 {
     public GameObject Note;
-    public float Speed = -7;
+    public float Speed = -6;
      
     // Start is called before the first frame update
     void Start()
