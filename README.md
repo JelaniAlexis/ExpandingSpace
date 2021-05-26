@@ -18,3 +18,5 @@ A game currently under development. Expected release date: July 2nd 2021
 - Amy Wagendorp
 - Serafine Mekkes
 - Taquila van Houwelingen
+
+Trello: https://trello.com/b/b5J8lwjX/expanding-space
