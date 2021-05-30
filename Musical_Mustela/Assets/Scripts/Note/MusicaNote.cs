@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MusicaNote : MonoBehaviour
 {
-    public GameObject Note;
+    public GameObject NoteAries;
     public float Speed = -6;
      
     // Start is called before the first frame update
     void Start()
     {
-        Note = GameObject.Find("UI_Eerste schetsen_buttons_Aries_01");
+        NoteAries = GameObject.Find("UI_Eerste_schetsen_buttons_Aries_01");
     }
 
     // Update is called once per frame
@@ -21,6 +21,6 @@ public class MusicaNote : MonoBehaviour
     }
     void OnBecameInvisible()
     {
-        Destroy(Note);
+        Destroy(NoteAries);
     }
 }

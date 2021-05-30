@@ -328,7 +328,6 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Note/ColDetect.cs"
-"Assets/Scripts/Note/Inputs.cs"
 "Assets/Scripts/Note/MusicaNote.cs"
 -langversion:8.0
 

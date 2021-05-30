@@ -3,7 +3,9 @@ guid: 1950da52293f7194b963c4d4eb2638ab
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - NoteAries: {fileID: 598245638613769183, guid: 36da7edca0b517140958de5b2bcbb302, type: 3}
+  - HitCircle: {fileID: 1969520863201043634, guid: 028f4f47e1e97bf43a7adc2325e2ea41, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
