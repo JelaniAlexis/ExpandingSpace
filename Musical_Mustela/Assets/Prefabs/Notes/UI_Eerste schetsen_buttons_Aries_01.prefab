@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1337603078259557475}
   - component: {fileID: 5307132170981248159}
   - component: {fileID: 7663772674665334514}
-  - component: {fileID: 2978483728386999946}
   - component: {fileID: 7035702941749978048}
+  - component: {fileID: -6096530849113421025}
   m_Layer: 0
   m_Name: UI_Eerste schetsen_buttons_Aries_01
   m_TagString: Untagged
@@ -107,7 +107,21 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2978483728386999946
+--- !u!114 &7035702941749978048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598245638613769183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fabb8bb153b25d048ab16daf8c205e56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoteAries: {fileID: 598245638613769183}
+  Speed: -6
+--- !u!114 &-6096530849113421025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,17 +136,3 @@ MonoBehaviour:
   NoteAries: {fileID: 598245638613769183}
   HitCircle: {fileID: 1969520863201043634, guid: 028f4f47e1e97bf43a7adc2325e2ea41, type: 3}
   distance: 0
---- !u!114 &7035702941749978048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598245638613769183}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fabb8bb153b25d048ab16daf8c205e56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NoteAries: {fileID: 0}
-  Speed: -6
