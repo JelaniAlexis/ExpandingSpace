@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Collision\ColDetect.cs" />
     <Compile Include="Assets\Scripts\Note\NoteSpawner.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Note\MusicaNote_Velocity.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

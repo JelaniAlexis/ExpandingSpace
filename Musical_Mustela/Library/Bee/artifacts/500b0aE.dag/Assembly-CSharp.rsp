@@ -329,6 +329,7 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Collision/ColDetect.cs"
 "Assets/Scripts/Note/MusicaNote.cs"
+"Assets/Scripts/Note/MusicaNote_Velocity.cs"
 "Assets/Scripts/Note/NoteSpawner.cs"
 "Assets/Scripts/Player.cs"
 -langversion:8.0
