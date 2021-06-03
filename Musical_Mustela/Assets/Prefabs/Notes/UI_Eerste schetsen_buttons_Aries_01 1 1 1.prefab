@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1950da52293f7194b963c4d4eb2638ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0.2
+  damage: 0.125
   NoteAries: {fileID: 8368404006590802035}
   HitCircle: {fileID: 1969520863201043634, guid: 028f4f47e1e97bf43a7adc2325e2ea41, type: 3}
   distance: 0

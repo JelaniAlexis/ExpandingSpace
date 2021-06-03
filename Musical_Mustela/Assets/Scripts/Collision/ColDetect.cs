@@ -9,8 +9,6 @@ public class ColDetect : MonoBehaviour
     
     public float damage;
     private Player player;
-    
-
 
     public GameObject NoteAries;
     public GameObject HitCircle;
@@ -37,18 +35,21 @@ public class ColDetect : MonoBehaviour
             Debug.Log("Good Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
+            ScoringSystem.scoreVal += 50;
         }
         else if (distance > 0.1 && distance < 0.375 && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Great Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
+            ScoringSystem.scoreVal += 100;
         }
         else if (distance < 0.1 && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Perfect Range");
             Destroy(NoteAries);
-            player.HealingUp(0.25f);
+            player.HealingUp(0.225f);
+            ScoringSystem.scoreVal += 250;
         }
 
         if (distance > 0.375 && distance < 0.75 && Input.GetKeyDown("d") && NoteAries)
@@ -56,18 +57,21 @@ public class ColDetect : MonoBehaviour
             Debug.Log("Good Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
+            ScoringSystem.scoreVal += 50;
         }
         else if (distance > 0.1 && distance < 0.375 && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Great Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
+            ScoringSystem.scoreVal += 100;
         }
         else if (distance < 0.1 && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Perfect Range");
             Destroy(NoteAries);
             player.HealingUp(0.25f);
+            ScoringSystem.scoreVal += 250;
         }
 
 
@@ -81,7 +85,7 @@ public class ColDetect : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         Debug.Log("Exit");
-        player.TakeDamage(0.2f);
+        player.TakeDamage(0.125f);
     }
 
 }
