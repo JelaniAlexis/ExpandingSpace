@@ -36,32 +36,38 @@ public class ColDetect : MonoBehaviour
         {
             Debug.Log("Good Range");
             Destroy(NoteAries);
+            player.HealingUp(0.1f);
         }
         else if (distance > 0.1 && distance < 0.375 && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Great Range");
             Destroy(NoteAries);
+            player.HealingUp(0.1f);
         }
         else if (distance < 0.1 && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Perfect Range");
             Destroy(NoteAries);
+            player.HealingUp(0.25f);
         }
 
         if (distance > 0.375 && distance < 0.75 && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Good Range");
             Destroy(NoteAries);
+            player.HealingUp(0.1f);
         }
         else if (distance > 0.1 && distance < 0.375 && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Great Range");
             Destroy(NoteAries);
+            player.HealingUp(0.1f);
         }
         else if (distance < 0.1 && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Perfect Range");
             Destroy(NoteAries);
+            player.HealingUp(0.25f);
         }
 
 

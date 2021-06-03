@@ -9,6 +9,15 @@ public class Player : MonoBehaviour
     public float maxHealth;
     [SerializeField] public Image healthImage;
 
+
+    public void HealingUp(float a)
+    {
+        if(playerHealth < 1)
+        {
+            playerHealth += a;
+            healthImage.fillAmount = playerHealth;
+        }
+    }
     public void TakeDamage(float a) 
     {
         playerHealth -= a;
