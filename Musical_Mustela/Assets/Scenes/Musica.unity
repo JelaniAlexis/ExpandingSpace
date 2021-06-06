@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Note: {fileID: 8368404006590802035, guid: 2215c10c230fb844e99005309396522a, type: 3}
-  Cooldown: 0.35
+  Cooldown: 1
 --- !u!1 &877066539
 GameObject:
   m_ObjectHideFlags: 0

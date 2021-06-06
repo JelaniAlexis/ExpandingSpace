@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class Player : MonoBehaviour
         healthImage.fillAmount = playerHealth;
     }
 
+  
+
+   
    
 
 
@@ -37,6 +41,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (playerHealth == 0)
+        {
+            Debug.Log("got put in a pack");
+            SceneManager.LoadScene(1);
+
+
+        }
+
     }
 }
