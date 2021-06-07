@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1600148419816011102}
   - component: {fileID: 6272154565008603315}
   - component: {fileID: 2978827228010338648}
-  - component: {fileID: 3640464393802930878}
+  - component: {fileID: 5361607440663372381}
   m_Layer: 0
   m_Name: UI_Eerste schetsen_buttons_Aries_01 1 1 1
   m_TagString: Untagged
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: af72899c27da2c845a49f14b2f2790ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -140,7 +140,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.26787087}
   serializedVersion: 2
   m_Radius: 0.090446025
---- !u!114 &3640464393802930878
+--- !u!114 &5361607440663372381
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,8 +149,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 8368404006590802035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fabb8bb153b25d048ab16daf8c205e56, type: 3}
+  m_Script: {fileID: 11500000, guid: a725a54adfbe1324e97852672f91a247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NoteAries: {fileID: 8368404006590802035}
-  Speed: -6
+  NoteAries: {fileID: 1915658808627434267, guid: 5327df54dcafb8a479d2750a4fe61f65, type: 3}
+  Speed: -250

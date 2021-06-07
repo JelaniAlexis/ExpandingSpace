@@ -23,7 +23,7 @@ public class ColDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distance = Vector2.Distance(NoteAries.transform.position, HitCircle.transform.position);
+        distance = Vector2.Distance(gameObject.transform.position, HitCircle.transform.position);
 
         HitReg();
     }

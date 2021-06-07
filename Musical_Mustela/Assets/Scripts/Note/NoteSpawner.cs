@@ -16,7 +16,7 @@ public class NoteSpawner : MonoBehaviour
     private void SpawnTheNote()
     {
         GameObject NoteSpawner = Instantiate(Note) as GameObject;
-        NoteSpawner.transform.position = new Vector2(8, 0);
+        NoteSpawner.transform.position = new Vector2(8, 2.34f);
     }
 
     // Start is called before the first frame update

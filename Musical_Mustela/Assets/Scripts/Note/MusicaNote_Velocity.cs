@@ -7,24 +7,48 @@ public class MusicaNote_Velocity : MonoBehaviour
 
     //Instantiating Game Object
     public GameObject NoteAries;
-
+    //Instantiating Rigidbody2D
     Rigidbody2D NoteRB;
+    //Instantiating Sprite Renderer
+    SpriteRenderer NoteRend;
     //Travelling speed of the note
     public float Speed = -250;
     // Start is called before the first frame update
     void Start()
     {
         NoteRB = GetComponent<Rigidbody2D>();
+        NoteRend = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         NoteRB.velocity = new Vector2(Speed, 0) * Time.deltaTime;
+
     }
 
-    void OnBecameInvisible()
+    IEnumerator Blipper()
     {
-        Destroy(NoteAries);
+        for (float f = 0.5f; f >= -0.025f; f -= 0.025f)
+        {
+            Color NoteColor = NoteRend.material.color;
+            NoteColor.a = f;
+            NoteRend.material.color = NoteColor;
+            yield return new WaitForSeconds(0.025f);
+            if(f <= 0)
+            {
+                Debug.Log("Pork in New York is trash");
+                Destroy(gameObject);
+            }
+             
+            
+        }
+
+         
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        StartCoroutine("Blipper");
     }
 }
