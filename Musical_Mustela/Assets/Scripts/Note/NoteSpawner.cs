@@ -6,7 +6,12 @@ public class NoteSpawner : MonoBehaviour
     //Instantiating Game Object
     public GameObject Note;
     //Instantiate cooldown float
-    public float Cooldown = 5f;
+    public float Cooldown;
+
+    void Update()
+    {
+        Cooldown = Random.Range(1.0f, 2.5f);
+    }
     //Instantiate function to spawn the note
     private void SpawnTheNote()
     {
