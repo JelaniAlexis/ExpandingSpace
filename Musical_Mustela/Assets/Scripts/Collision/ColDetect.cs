@@ -17,34 +17,34 @@ public class ColDetect : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("greenthingy").GetComponent<Player>();
-        
+        HitCircle = GameObject.Find("HitCircle");
     }
 
     // Update is called once per frame
     void Update()
     {
         distance = Vector2.Distance(gameObject.transform.position, HitCircle.transform.position);
-
+        Debug.Log(distance);
         HitReg();
     }
 
     public void HitReg()
     {
-        if (distance > 0.375 && distance < 0.75 && Input.GetKeyDown("a") && NoteAries)
+        if (distance > 0.375f && distance < 0.75f && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Good Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 50;
         }
-        else if (distance > 0.1 && distance < 0.375 && Input.GetKeyDown("a") && NoteAries)
+        else if (distance > 0.1f && distance < 0.375f && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Great Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 100;
         }
-        else if (distance < 0.1 && Input.GetKeyDown("a") && NoteAries)
+        else if (distance < 0.1f && Input.GetKeyDown("a") && NoteAries)
         {
             Debug.Log("Perfect Range");
             Destroy(NoteAries);
@@ -52,21 +52,21 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 250;
         }
 
-        if (distance > 0.375 && distance < 0.75 && Input.GetKeyDown("d") && NoteAries)
+        if (distance > 0.375f && distance < 0.75f && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Good Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 50;
         }
-        else if (distance > 0.1 && distance < 0.375 && Input.GetKeyDown("d") && NoteAries)
+        else if (distance > 0.1f && distance < 0.375f && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Great Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 100;
         }
-        else if (distance < 0.1 && Input.GetKeyDown("d") && NoteAries)
+        else if (distance < 0.1f && Input.GetKeyDown("d") && NoteAries)
         {
             Debug.Log("Perfect Range");
             Destroy(NoteAries);
