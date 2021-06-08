@@ -37,7 +37,7 @@ public class MusicaNote_Velocity : MonoBehaviour
             yield return new WaitForSeconds(0.025f);
             if(f <= 0)
             {
-                Debug.Log("Pork in New York is trash");
+                Debug.Log("Pork in New York is goated");
                 Destroy(gameObject);
             }
              

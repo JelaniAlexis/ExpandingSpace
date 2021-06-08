@@ -8,6 +8,6 @@ public class Sceneswitcher : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
-    
-   
+
+
 }
