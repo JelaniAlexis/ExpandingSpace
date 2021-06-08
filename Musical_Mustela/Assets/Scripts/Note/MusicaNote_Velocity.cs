@@ -29,10 +29,10 @@ public class MusicaNote_Velocity : MonoBehaviour
 
     IEnumerator Blipper()
     {
-        for (float f = 0.5f; f >= -0.025f; f -= 0.025f)
+        for (float f = 0.5f; f >= -0.05f; f -= 0.05f)
         {
             Color NoteColor = NoteRend.material.color;
-            NoteColor.a = f;
+            NoteColor.a = f * 2;
             NoteRend.material.color = NoteColor;
             yield return new WaitForSeconds(0.025f);
             if(f <= 0)
@@ -41,7 +41,6 @@ public class MusicaNote_Velocity : MonoBehaviour
                 Destroy(gameObject);
             }
              
-            
         }
 
          
@@ -49,6 +48,6 @@ public class MusicaNote_Velocity : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StartCoroutine("Blipper");
+        StartCoroutine(Blipper());
     }
 }

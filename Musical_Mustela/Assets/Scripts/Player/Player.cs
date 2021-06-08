@@ -25,23 +25,10 @@ public class Player : MonoBehaviour
         healthImage.fillAmount = playerHealth;
     }
 
-  
-
-   
-   
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (playerHealth == 0)
+        if (playerHealth < 0.01)
         {
             Debug.Log("got put in a pack");
             SceneManager.LoadScene(1);

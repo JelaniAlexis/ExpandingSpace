@@ -334,7 +334,7 @@
 "Assets/Scripts/Note/MusicaNote_Velocity.cs"
 "Assets/Scripts/Note/NoteSpawner.cs"
 "Assets/Scripts/Player/Player.cs"
-"Assets/Scripts/Scene2 scripts/sceneswitcher.cs"
+"Assets/Scripts/Scene2 scripts/Sceneswitcher.cs"
 -langversion:8.0
 
 /deterministic

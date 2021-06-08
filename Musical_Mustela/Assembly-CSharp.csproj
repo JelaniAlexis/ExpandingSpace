@@ -60,7 +60,7 @@
     <Compile Include="Assets\Scripts\Note\FadeOut.cs" />
     <Compile Include="Assets\Scripts\Note\MusicaNote.cs" />
     <Compile Include="Assets\Scripts\Collision\ColDetect.cs" />
-    <Compile Include="Assets\Scripts\Scene2 scripts\sceneswitcher.cs" />
+    <Compile Include="Assets\Scripts\Scene2 scripts\Sceneswitcher.cs" />
     <Compile Include="Assets\Scripts\Note\MusicaNote_Velocity.cs" />
     <Compile Include="Assets\Scripts\Note\NoteSpawner.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />

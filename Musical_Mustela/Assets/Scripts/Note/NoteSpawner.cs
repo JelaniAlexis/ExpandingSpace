@@ -7,6 +7,8 @@ public class NoteSpawner : MonoBehaviour
     public GameObject Note;
     //Instantiate cooldown float
     public float Cooldown;
+    //Instantiate canvas for text
+    public Transform Canvas;
 
     void Update()
     {
@@ -16,13 +18,14 @@ public class NoteSpawner : MonoBehaviour
     private void SpawnTheNote()
     {
         GameObject NoteSpawner = Instantiate(Note) as GameObject;
-        NoteSpawner.transform.position = new Vector2(8, 2.34f);
+        NoteSpawner.transform.SetParent(Canvas);
+        NoteSpawner.transform.position = new Vector2(8, 2.4318f);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-         
+        Canvas = GameObject.FindGameObjectWithTag("TextCanvas").transform;
         StartCoroutine(CreateNewNote());
     }
     IEnumerator CreateNewNote()

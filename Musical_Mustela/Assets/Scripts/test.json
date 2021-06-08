@@ -1,0 +1,12 @@
+{
+  "lvlName": "Testing",
+  "songfile": "./location",
+  "bpm": 105.0,
+  "difficulty": 5.0,
+  "damage": 10.0,
+  "noteSequence": [
+    [ "1(note type)", "1(time until next note)", "5(speed)"],
+    [ 1, 0.8, 3 ],
+    [ 2, 0.2, 4 ]
+  ]
+}

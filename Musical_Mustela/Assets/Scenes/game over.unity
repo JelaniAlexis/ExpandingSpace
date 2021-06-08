@@ -552,8 +552,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 673159911}
-        m_TargetAssemblyTypeName: sceneswitcher, Assembly-CSharp
-        m_MethodName: retry
+        m_TargetAssemblyTypeName: Sceneswitcher, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
