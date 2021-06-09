@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         if (playerHealth < 0.01)
         {
             Debug.Log("got put in a pack");
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
 
 
         }
