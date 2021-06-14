@@ -9,7 +9,7 @@ public class ColDetect : MonoBehaviour
 
     public float damage;
     public int combo;
-    public int FailAmount;
+    public static int FailAmount;
     private Player player;
     public Animator FAnim;
     public GameObject NoteAries;
@@ -122,17 +122,17 @@ public class ColDetect : MonoBehaviour
         {
             if (inrange == true && antiInsta < 1)
             {
+                FailAmount++;
                 player.TakeDamage(0.125f);
                 ScoringSystem.comboVal = 0;
-                FailAmount++;
                 antiInsta++;
 
-                if (FailAmount < 3)
+                if (FailAmount != 3)
                 {
                     FAnim.SetBool("IsFerretFalling", false);
                     Debug.Log("Voor de 2de keer: Becky is een idioot. " + "fails: " + FailAmount);
                 }
-                else if (FailAmount >= 3)
+                else if (FailAmount == 3)
                 {
                     FAnim.SetBool("IsFerretFalling", true);
                     Debug.Log("Becky is een idioot");

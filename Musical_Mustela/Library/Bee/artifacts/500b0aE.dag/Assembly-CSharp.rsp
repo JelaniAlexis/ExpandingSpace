@@ -334,7 +334,6 @@
 "Assets/Scripts/Note/MusicaNote_Velocity.cs"
 "Assets/Scripts/Note/NoteSpawner.cs"
 "Assets/Scripts/Pause/PauseMenu.cs"
-"Assets/Scripts/Player/FerretAnim.cs"
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Scene2 scripts/sceneswitcher.cs"
 -langversion:8.0
