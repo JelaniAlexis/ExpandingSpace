@@ -9,8 +9,9 @@ public class ColDetect : MonoBehaviour
 
     public float damage;
     public int combo;
+    public int FailAmount;
     private Player player;
-
+    public Animator FAnim;
     public GameObject NoteAries;
     public GameObject HitCircle;
     public GameObject ScoreCanvas;
@@ -29,6 +30,7 @@ public class ColDetect : MonoBehaviour
         inrange = false;
         antiInsta = 0;
         ScoreText = GameObject.Find("Canvas2").transform.Find("ScoreText");
+        FAnim = GameObject.Find("TheFerret").GetComponent<Animator>();
     }
 
     private void ScoreDisp(int gained)
@@ -122,8 +124,22 @@ public class ColDetect : MonoBehaviour
             {
                 player.TakeDamage(0.125f);
                 ScoringSystem.comboVal = 0;
+                FailAmount++;
                 antiInsta++;
+
+                if (FailAmount < 3)
+                {
+                    FAnim.SetBool("IsFerretFalling", false);
+                    Debug.Log("Voor de 2de keer: Becky is een idioot. " + "fails: " + FailAmount);
+                }
+                else if (FailAmount >= 3)
+                {
+                    FAnim.SetBool("IsFerretFalling", true);
+                    Debug.Log("Becky is een idioot");
+                }
+                 
             }
+
         }
         HitReg();
     }
