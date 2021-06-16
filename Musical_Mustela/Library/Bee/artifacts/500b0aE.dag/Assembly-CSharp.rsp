@@ -332,6 +332,7 @@
 "Assets/Scripts/Note/FadeOut.cs"
 "Assets/Scripts/Note/MusicaNote.cs"
 "Assets/Scripts/Note/MusicaNote_Velocity.cs"
+"Assets/Scripts/Note/NoteCount.cs"
 "Assets/Scripts/Note/NoteSpawner.cs"
 "Assets/Scripts/Pause/PauseMenu.cs"
 "Assets/Scripts/Player/Player.cs"

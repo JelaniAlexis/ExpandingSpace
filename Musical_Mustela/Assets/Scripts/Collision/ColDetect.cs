@@ -12,6 +12,7 @@ public class ColDetect : MonoBehaviour
     public static int FailAmount;
     private Player player;
     public Animator FAnim;
+    public AnimationClip RunAnim;
     public GameObject NoteAries;
     public GameObject HitCircle;
     public GameObject ScoreCanvas;
@@ -31,6 +32,7 @@ public class ColDetect : MonoBehaviour
         antiInsta = 0;
         ScoreText = GameObject.Find("Canvas2").transform.Find("ScoreText");
         FAnim = GameObject.Find("TheFerret").GetComponent<Animator>();
+         
     }
 
     private void ScoreDisp(int gained)
@@ -61,6 +63,8 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 100;
             ScoreDisp(100);
             ScoringSystem.comboVal += 1;
+            FailAmount = 0;
+            NoteCount.GoodAmount++;
         }
         else if (distance > 0.1375f && distance < 0.375f && Input.GetKeyDown("a") && NoteAries)
         {
@@ -70,6 +74,8 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 150;
             ScoreDisp(150);
             ScoringSystem.comboVal += 1;
+            FailAmount = 0;
+            NoteCount.GreatAmount++;
         }
         else if (distance < 0.1375f && Input.GetKeyDown("a") && NoteAries)
         {
@@ -79,6 +85,8 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 250;
             ScoreDisp(250);
             ScoringSystem.comboVal += 1;
+            FailAmount = 0;
+            NoteCount.PerfectAmount++;
         }
 
         if (distance > 0.375f && distance < 0.8f && Input.GetKeyDown("d") && NoteAries)
@@ -89,6 +97,8 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 100;
             ScoreDisp(100);
             ScoringSystem.comboVal += 1;
+            FailAmount = 0;
+            NoteCount.GoodAmount++;
         }
         else if (distance > 0.1375f && distance < 0.375f && Input.GetKeyDown("d") && NoteAries)
         {
@@ -98,6 +108,8 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 150;
             ScoreDisp(150);
             ScoringSystem.comboVal += 1;
+            FailAmount = 0;
+            NoteCount.GreatAmount++;
         }
         else if (distance < 0.1375f && Input.GetKeyDown("d") && NoteAries)
         {
@@ -107,6 +119,8 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.scoreVal += 250;
             ScoreDisp(250);
             ScoringSystem.comboVal += 1;
+            FailAmount = 0;
+            NoteCount.PerfectAmount++;
         }
     }
 
@@ -126,6 +140,7 @@ public class ColDetect : MonoBehaviour
                 player.TakeDamage(0.125f);
                 ScoringSystem.comboVal = 0;
                 antiInsta++;
+                NoteCount.YouSuck++;
 
                 if (FailAmount != 3)
                 {
@@ -136,6 +151,7 @@ public class ColDetect : MonoBehaviour
                 {
                     FAnim.SetBool("IsFerretFalling", true);
                     Debug.Log("Becky is een idioot");
+                    FailAmount = 0;
                 }
                  
             }
