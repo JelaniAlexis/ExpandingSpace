@@ -337,6 +337,7 @@
 "Assets/Scripts/Pause/PauseMenu.cs"
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Scene2 scripts/sceneswitcher.cs"
+"Assets/Scripts/winscripts/winner.cs"
 -langversion:8.0
 
 /deterministic

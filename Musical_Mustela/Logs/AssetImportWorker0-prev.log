@@ -1,0 +1,165 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.7f1 (d91830b65d9b) revision 14227504'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1052; Version 2009; 64bit' Language: 'nl' Physical Memory: 7998 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.7f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/mrbos/Documents/Spacestuff/Çode/Musical_Mustela
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50413
+Successfully changed project path to: C:/Users/mrbos/Documents/Spacestuff/Çode/Musical_Mustela
+C:/Users/mrbos/Documents/Spacestuff/Çode/Musical_Mustela
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 38.00 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.7f1 (d91830b65d9b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/mrbos/Documents/Spacestuff/Çode/Musical_Mustela/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon Pro WX3200 Graphics (ID=0x6981)
+    Vendor:   ATI
+    VRAM:     4076 MB
+    Driver:   27.20.14534.1003
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56980
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.7f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003041 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.447 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001559 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 38.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.130 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1840 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.2 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2299.
+Total: 3.884600 ms (FindLiveObjects: 0.162500 ms CreateObjectMapping: 0.083600 ms MarkObjects: 3.482200 ms  DeleteObjects: 0.155200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/Collision/ScoringSystem.cs
+  artifactKey: Guid(ea158e780ad88a447b3b8fb4d9776943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision/ScoringSystem.cs using Guid(ea158e780ad88a447b3b8fb4d9776943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2fcd68eb08ae4c9cabe5831d4ca697a') in 0.035569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000576 seconds.
+  path: Assets/Scripts/Collision/ColDetect.cs
+  artifactKey: Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision/ColDetect.cs using Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2d3e8c9b25268a9951a4415d2dd62a') in 0.011249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 247.590247 seconds.
+  path: Assets/Scripts/Collision/ColDetect.cs
+  artifactKey: Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision/ColDetect.cs using Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '859fbde3a34d42c05746b2475e7c6229') in 0.010448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.918754 seconds.
+  path: Assets/Scripts/Collision/ColDetect.cs
+  artifactKey: Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision/ColDetect.cs using Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c46edf64c680dd5b967a4dc9c2ac0f5') in 0.010422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.467916 seconds.
+  path: Assets/Scripts/Collision/ColDetect.cs
+  artifactKey: Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision/ColDetect.cs using Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0de0a28a826af38515f95c0cf590606') in 0.010265 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001439 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.029 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1835 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.2 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2303.
+Total: 2.367700 ms (FindLiveObjects: 0.186800 ms CreateObjectMapping: 0.083200 ms MarkObjects: 2.009300 ms  DeleteObjects: 0.086900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001525 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1835 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 2.161400 ms (FindLiveObjects: 0.144900 ms CreateObjectMapping: 0.059000 ms MarkObjects: 1.800600 ms  DeleteObjects: 0.156000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.443351 seconds.
+  path: Assets/Scripts/Collision/ColDetect.cs
+  artifactKey: Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Collision/ColDetect.cs using Guid(1950da52293f7194b963c4d4eb2638ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32137f2e9c07ec050a1b5cfbe34be3ee') in 0.014499 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005240 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.777 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1835 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.3 MB.
+System memory in use after: 87.3 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2311.
+Total: 2.551700 ms (FindLiveObjects: 0.178600 ms CreateObjectMapping: 0.064300 ms MarkObjects: 2.213500 ms  DeleteObjects: 0.094400 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ColDetect : MonoBehaviour
 {
 
-
+    public static int winit = 0;
     public float damage;
     public int combo;
     public static int FailAmount;
@@ -65,6 +66,7 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GoodAmount++;
+            winit += 1;
         }
         else if (distance > 0.1375f && distance < 0.375f && Input.GetKeyDown("a") && NoteAries)
         {
@@ -76,6 +78,7 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GreatAmount++;
+            winit += 1;
         }
         else if (distance < 0.1375f && Input.GetKeyDown("a") && NoteAries)
         {
@@ -87,6 +90,7 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.PerfectAmount++;
+            winit += 1;
         }
 
         if (distance > 0.375f && distance < 0.8f && Input.GetKeyDown("d") && NoteAries)
@@ -99,6 +103,7 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GoodAmount++;
+            winit += 1;
         }
         else if (distance > 0.1375f && distance < 0.375f && Input.GetKeyDown("d") && NoteAries)
         {
@@ -110,6 +115,7 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GreatAmount++;
+            winit += 1;
         }
         else if (distance < 0.1375f && Input.GetKeyDown("d") && NoteAries)
         {
@@ -121,12 +127,23 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.PerfectAmount++;
+            winit += 1;
+            
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(winit == 5)
+        {
+            Debug.Log("eyy");
+            SceneManager.LoadScene("win");
+
+        }
+        
+         
+        
         distance = Vector2.Distance(gameObject.transform.position, HitCircle.transform.position);
         if (distance < 0.1f)
         {
