@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class ColDetect : MonoBehaviour
 {
 
-    public static int winit = 0;
+    public static bool winit;
     public float damage;
     public int combo;
     public static int FailAmount;
@@ -24,9 +24,21 @@ public class ColDetect : MonoBehaviour
 
     public int antiInsta;
 
+
+    public static void Wincheck()
+    {
+        if (winit == true)
+        {
+            Debug.Log("eyy");
+            ScoringSystem.scoreVal = 0;
+            SceneManager.LoadScene("win");
+            winit = false;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
+        winit = false;
         player = GameObject.Find("greenthingy").GetComponent<Player>();
         HitCircle = GameObject.Find("HitCircle");
         inrange = false;
@@ -53,12 +65,15 @@ public class ColDetect : MonoBehaviour
                 break;
         }
     }
+    public static void WinitSwitch()
+    {
+        winit = true;
+    }
 
     public void HitReg()
     {
         if (distance > 0.375f && distance < 0.8f && Input.GetKeyDown("a") && NoteAries)
         {
-            Debug.Log("Good Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 100;
@@ -66,11 +81,11 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GoodAmount++;
-            winit += 1;
+            NoteSpawner.endit--;
+            Debug.Log(NoteSpawner.endit);
         }
         else if (distance > 0.1375f && distance < 0.375f && Input.GetKeyDown("a") && NoteAries)
         {
-            Debug.Log("Great Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 150;
@@ -78,11 +93,11 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GreatAmount++;
-            winit += 1;
+            NoteSpawner.endit--;
+            Debug.Log(NoteSpawner.endit);
         }
         else if (distance < 0.1375f && Input.GetKeyDown("a") && NoteAries)
         {
-            Debug.Log("Perfect Range");
             Destroy(NoteAries);
             player.HealingUp(0.225f);
             ScoringSystem.scoreVal += 250;
@@ -90,12 +105,12 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.PerfectAmount++;
-            winit += 1;
+            NoteSpawner.endit--;
+            Debug.Log(NoteSpawner.endit);
         }
 
         if (distance > 0.375f && distance < 0.8f && Input.GetKeyDown("d") && NoteAries)
         {
-            Debug.Log("Good Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 100;
@@ -103,11 +118,11 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GoodAmount++;
-            winit += 1;
+            NoteSpawner.endit--;
+            Debug.Log(NoteSpawner.endit);
         }
         else if (distance > 0.1375f && distance < 0.375f && Input.GetKeyDown("d") && NoteAries)
         {
-            Debug.Log("Great Range");
             Destroy(NoteAries);
             player.HealingUp(0.1f);
             ScoringSystem.scoreVal += 150;
@@ -115,11 +130,11 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.GreatAmount++;
-            winit += 1;
+            NoteSpawner.endit--;
+            Debug.Log(NoteSpawner.endit);
         }
         else if (distance < 0.1375f && Input.GetKeyDown("d") && NoteAries)
         {
-            Debug.Log("Perfect Range");
             Destroy(NoteAries);
             player.HealingUp(0.25f);
             ScoringSystem.scoreVal += 250;
@@ -127,22 +142,15 @@ public class ColDetect : MonoBehaviour
             ScoringSystem.comboVal += 1;
             FailAmount = 0;
             NoteCount.PerfectAmount++;
-            winit += 1;
-            
+            NoteSpawner.endit--;
+            Debug.Log(NoteSpawner.endit);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(winit == 5)
-        {
-            Debug.Log("eyy");
-            SceneManager.LoadScene("win");
-
-        }
-        
-         
+        Wincheck();
         
         distance = Vector2.Distance(gameObject.transform.position, HitCircle.transform.position);
         if (distance < 0.1f)
@@ -158,6 +166,7 @@ public class ColDetect : MonoBehaviour
                 ScoringSystem.comboVal = 0;
                 antiInsta++;
                 NoteCount.YouSuck++;
+                NoteSpawner.endit--;
 
                 if (FailAmount != 3)
                 {

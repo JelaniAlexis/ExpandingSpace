@@ -12,7 +12,7 @@ public class MusicaNote_Velocity : MonoBehaviour
     //Instantiating Sprite Renderer
     SpriteRenderer NoteRend;
     //Travelling speed of the note
-    public float Speed = -250;
+    public float Speed = -350;
     // Start is called before the first frame update
     void Start()
     {
