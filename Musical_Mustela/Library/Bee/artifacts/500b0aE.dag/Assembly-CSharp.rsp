@@ -331,6 +331,7 @@
 "Assets/Scripts/Collision/ColDetect.cs"
 "Assets/Scripts/Collision/ScoringSystem.cs"
 "Assets/Scripts/Level Initialization/Level1.cs"
+"Assets/Scripts/Level Initialization/MusicPlayer.cs"
 "Assets/Scripts/Note/FadeOut.cs"
 "Assets/Scripts/Note/MusicaNote.cs"
 "Assets/Scripts/Note/MusicaNote_Velocity.cs"

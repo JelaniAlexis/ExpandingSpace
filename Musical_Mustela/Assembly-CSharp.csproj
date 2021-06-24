@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Collision\ScoringSystem.cs" />
     <Compile Include="Assets\Scripts\Note\FadeOut.cs" />
     <Compile Include="Assets\Scripts\Pause\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Level Initialization\MusicPlayer.cs" />
     <Compile Include="Assets\Scripts\winscripts\winner.cs" />
     <Compile Include="Assets\Scripts\Note\MusicaNote.cs" />
     <Compile Include="Assets\Scripts\Collision\ColDetect.cs" />
