@@ -150,8 +150,6 @@ public class ColDetect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Wincheck();
-        
         distance = Vector2.Distance(gameObject.transform.position, HitCircle.transform.position);
         if (distance < 0.1f)
         {

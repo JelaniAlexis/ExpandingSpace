@@ -5,6 +5,7 @@ public class NoteSpawner : MonoBehaviour
 {
     public Lev1 Lvl1;
     public static int endit;
+    public static float testval;
 
     //Instantiating Game Object
     public GameObject Note;
@@ -32,21 +33,14 @@ public class NoteSpawner : MonoBehaviour
         StartCoroutine(CreateNewNote());
     }
 
-    void Update()
-    {
-        if (endit <= 0)
-        {
-            ColDetect.WinitSwitch();
-            Debug.Log(ColDetect.winit);
-            ColDetect.Wincheck();
-        }
-    }
     IEnumerator CreateNewNote()
     {
         // Cooldown is in ms
         foreach(float n in Lvl1.NoteSequence)
         {
+            testval += n;
             Cooldown =  n / 1000;
+            Debug.Log(testval);
             yield return new WaitForSeconds(Cooldown);
             SpawnTheNote();
         }
